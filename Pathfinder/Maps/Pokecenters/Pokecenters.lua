@@ -65,6 +65,12 @@ local Pokecenters = {
 	"Pokecenter Oreburgh City",
 	"Pokecenter Floaroma",
 	"Pokecenter Eterna City",
+	"Hearthome Pokecenter",
+	"Solaceon Pokecenter",
+	"Veilstone Pokecenter",
+	"Pastoria Pokecenter",
+	"Celestic Pokecenter",
+	"Canalave Pokecenter",
 }
 
 return Pokecenters

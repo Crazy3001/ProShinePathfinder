@@ -1039,14 +1039,25 @@ linkExce["Frozen Cave B1F"] = {
 --------SINNOH------
 --------------------
 
-linkExce["Route 204"] = {
-    ["Ravaged Path_A"] = {10, 34},
-    ["Ravaged Path_B"] = {19, 26},
+-- linkExce["Route 204"] = {
+    -- ["Ravaged Path_A"] = {10, 34},
+    -- ["Ravaged Path_B"] = {19, 26},
+-- }
+-- linkExce["Ravaged Path"] = {
+    -- ["Route 204_A"] = {21, 46},
+    -- ["Route 204_B"] = {30, 41},
+-- }
+linkExce["Mt. Coronet Center"] = {
+    ["Route 211_A"] = {2, 28}, --West
+    ["Route 211_B"] = {32, 23}, --East
 }
-linkExce["Ravaged Path"] = {
-    ["Route 204_A"] = {21, 46},
-    ["Route 204_B"] = {30, 41},
+linkExce["Route 211_B"] = {
+    ["Mt. Coronet Center"] = {59, 21},
 }
+linkExce["Route 211_A"] = {
+    ["Mt. Coronet Center"] = {37, 23},
+}
+
 -- linkExce[""] = {
 --     [""] = {},
 -- }
