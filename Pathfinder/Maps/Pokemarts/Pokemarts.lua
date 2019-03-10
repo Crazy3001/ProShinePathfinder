@@ -65,5 +65,9 @@ PokemartList["Mart Jubilife City"] = {[1] = {3,6,0}}
 PokemartList["Mart Oreburgh City"] = {[1] = {3,6,0}}
 PokemartList["Mart Floaroma"] = {[1] = {3,6,0}}
 PokemartList["Mart Eterna City"] = {[1] = {3,6,0}}
+PokemartList["Mart Hearthome"] = {[1] = {3,6,0}}
+PokemartList["Solaceon Pokemart"] = {[1] = {3,6,0}}
+PokemartList["Pastoria Pokemart"] = {[1] = {3,6,0}}
+PokemartList["Canalave Pokemart"] = {[1] = {3,6,0}}
 
 return PokemartList
