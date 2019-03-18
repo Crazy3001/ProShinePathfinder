@@ -3,7 +3,7 @@ local function nTimes(n, f, x) for i = 0, n - 1 do x = f(x) end return x end -- 
 local function rmlast(str) return str:sub(1, -2):match(".+[%./]") or "" end -- removes last dir / file from the callee path
 local cppdpath = nTimes(3, rmlast, cpath) -- callee parent of parent dir path
 local cpppdpath = rmlast(cppdpath) -- callee parent parent of parent dir path
-
+log(cppdpath)
 local aStar               = require (cppdpath .. "Lib/lua-astar/AStar")
 local Lib                 = require (cppdpath .. "Lib/Lib")
 local Game                = require (cppdpath .. "Lib/Game")
@@ -21,7 +21,7 @@ local elevatorExceptions  = require (cppdpath .. "Maps/MapExceptions/Elevators")
 local transmatExceptions  = require (cppdpath .. "Maps/MapExceptions/Transmats")
 local moveAbilities       = {["cut"] = 0, ["surf"] = 0, ["dig"] = 155, ["rock smash"] = 0, ["dive"] = 155}
 local workAbilities       = {["headbutt"] = 155, ["dig"] = 0}
-local moveItems           = {"Fresh Water", "Marsh Badge", "Zephyr Badge", "Bicycle", "Go-Goggles", "Green Bicycle", "Blue Bicycle", "Yellow Bicycle"}
+local moveItems           = {"Fresh Water", "Marsh Badge", "Zephyr Badge", "Bicycle", "Go-Goggles", "Green Bicycle", "Blue Bicycle", "Yellow Bicycle", "Red Bicycle"}
 local globalMap           = {}
 local pathSolution        = {}
 local settings            = {}
@@ -365,9 +365,11 @@ end
 -- main function called by users
 local function moveTo(map, dest)
 	if not dest then
-		dest = map
 		map = getMapName()
-	end
+        dest = map
+	elseif not map then
+        map = getMapName()
+    end
 	playerNode = getPlayerNode(map)
 	dest = mapsToNodes(dest)
 	if Lib.useMount(settings.mount) then

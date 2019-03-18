@@ -76,4 +76,46 @@ function Lib.inTable(tab, val)
    return false
 end
 
+--[[###########################################
+##                                           ##
+## Merged from 'Libs/syslib.lua' (Questing)  ##
+##                                           ##
+#############################################]]
+function Lib.debug(message)
+	if debug then
+		log(message)
+	end
+end
+
+function Lib.todo(message)
+	if todo then
+		log("TODO: " .. message)
+	end
+end
+
+function Lib.error(functionName, message)
+	fatal("error: " .. functionName .. ": " .. message)
+	return false
+end
+
+function Lib.assert(test, functionName, message)
+	if not test then
+		fatal("error: " .. functionName .. ": " .. message)
+		return false
+	end
+	return true
+end
+
+function Lib.stringContains(haystack, needle)
+	haystack = string.upper(haystack)
+	needle   = string.upper(needle)
+	if string.find(haystack, needle) ~= nil then
+		return true
+	end
+	return false
+end
+
+function Lib.removeCharacter(str, character)
+	return str:gsub("%" .. character .. "+", "")
+end
 return Lib

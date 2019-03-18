@@ -64,6 +64,16 @@ return {
         ["Rock Tunnel 2_A"] = {{6, 5, 29, 11}, {30, 5, 45, 20}, {40, 18, 42, 26}}, -- top
         ["Rock Tunnel 2_B"] = {{6, 21, 38, 28}, {6, 12, 26, 20}} -- bottom
     },
+    ["Rocket Hideout B1F"] = {
+        ["Rocket Hideout B1F_A"] = {{0, 0, 25, 14}, {9, 15, 15, 22}}, -- top
+        ["Rocket Hideout B1F_B"] = {{16, 15, 25, 40}}, -- bottom right
+        ["Rocket Hideout B1F_C"] = {{0, 15, 8, 22}}, -- middle left, cage
+        ["Rocket Hideout B1F_D"] = {{0, 23, 15, 40}} -- bottom left
+    },
+    ["Rocket Hideout B4F"] = {
+        ["Rocket Hideout B4F_A"] = {{0, 0, 15, 21}}, -- top left
+        ["Rocket Hideout B4F_B"] = {{0, 22, 23, 27}, {16, 0, 23, 21}} -- top right to bottom left
+    },
     ["Pokemon Tower B3"] = {
         ["Pokemon Tower B3_A"] = {{19, 16, 24, 18}, {20, 18, 24, 19}, {20, 20, 20, 21}}, -- top
         ["Pokemon Tower B3_B"] = {{17, 18, 19, 23}}, -- left
@@ -90,10 +100,6 @@ return {
         ["Pokemon Tower B20_A"] = {{17, 16, 24, 20}, {21, 21, 24, 23}}, -- top and left
         ["Pokemon Tower B20_B"] = {{17, 22, 20, 23}} -- bottom left
     },
-	["Route 19"] = {
-		["Route 19_A"] = {{8, 3, 36, 26}, {8, 27, 11, 27}, {12, 27, 20, 28}, {21, 27, 25, 27}, {31, 27, 33, 27}, {34, 27, 39, 28}}, -- Beach area south of Fuschia
-		["Route 19_B"] = {{8, 28, 11, 28}, {26, 27, 30, 27}, {21, 28, 33, 28}, {0, 29, 73, 53}, {48, 2, 73, 28}, {38, 1, 47, 22}} -- Surf requirement
-	},
     ["Route 20"] = {
         ["Route 20_A"] = {{0, 16, 51, 44}, {52, 41, 82, 44}, {77, 37, 82, 40}}, -- left / cinnabar
         ["Route 20_B"] = {{52, 20, 69, 40}, {70, 21, 83, 36}, {84, 24, 120, 38}} -- right / route 19

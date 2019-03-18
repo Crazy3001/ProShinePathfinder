@@ -18,6 +18,9 @@ npcExce["Indigo Plateau Center"] = {
 npcExce["Private Resort"] = {
     ["Love Island_B"] = {{23, 43}, "Yes", "This stone seems to be radiating with unknown energy. Do you want to touch it?"}
 }
+npcExce["Rocket Hideout B1F_C"] = {
+    ["Rocket Hideout B1F_A"] = {{7, 18}, "Yes", "It looks like you can jump the wall on top of this crate. Do it?"}
+}
 npcExce["Saffron City Station_A"] = {
     ["Saffron City Station_B"] = {{9, 9}, "Yes", "Would you like to take the train? It costs $5,000 to go to Goldenrod."}
 }

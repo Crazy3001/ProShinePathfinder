@@ -51,7 +51,7 @@ The function expects four parameters:
 `currentMap` contains the map the player is in, you can get it with `getPlayerMap()`  
 `dest` contains a string that is the name of a known map ( case sensitive ).  
 `x` and `y` coordinates on the map.  
-This function is mainly usefull if you are trying to move in a map that exist in different place in the game. Simply use coordinates and the Pathfinder will find the correct submap.  
+This function is mainly usefull if you are trying to move in a map that exist in different place in the Game. Simply use coordinates and the Pathfinder will find the correct submap.  
 ```lua
 -- we assume currentMap contains the name of the map the player is in.
 moveToMapCell(currentMap, "Route 2", 28, 35) --> will move to 28, 35 in Route 2.

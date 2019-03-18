@@ -177,7 +177,10 @@ JohtoMap["Mt. Mortar 1F_G"] = {["Mt. Mortar Lower Cave"] = {1}}
 JohtoMap["Mt. Mortar B1F_A"] = {["Mt. Mortar 1F_B"] = {1}, ["Mt. Mortar B1F_B"] = {1, {["abilities"] = {"surf"}}}}
 JohtoMap["Mt. Mortar B1F_B"] = {["Mt. Mortar B1F_A"] = {1, {["abilities"] = {"surf"}}}, ["Mt. Mortar Lower Cave"] = {1}}
 JohtoMap["Mt. Mortar Lower Cave"] = {["Mt. Mortar 1F_C"] = {1.5}, ["Mt. Mortar 1F_A"] = {1.5}, ["Mt. Mortar 1F_E"] = {1.5}, ["Mt. Mortar 1F_G"] = {1.5}, ["Mt. Mortar 1F_D"] = {2}, ["Mt. Mortar B1F_B"] = {2.5}, ["Mt. Mortar Upper Cave"] = {2.5}}
-JohtoMap["Mt. Mortar Upper Cave"] = {["Mt. Mortar Lower Cave"] = {1.5, {["abilities"] = {"surf"}}}, ["Mt. Mortar 1F_F"] = {2}}
+JohtoMap["Mt. Mortar Upper Cave"] = {["Mt. Mortar Lower Cave"] = {1.5, {["abilities"] = {"surf"}}}, ["Mt. Mortar 1F_F"] = {2}, ["Mt. Mortar Northern Entrance"] = {1.5, {["abilities"] = {"surf"}}}}
+JohtoMap["Mt. Mortar Northern Entrance"] = {["Mt. Mortar Upper Cave"] = {0.2}, ["Forest Pit"] = {0.2}}
+JohtoMap["Forest Pit"] = {["Mt. Mortar Northern Entrance"] = {0.2}, ["Lake Cave"] = {0.2}}
+JohtoMap["Lake Cave"] = {["Forest Pit"] = {0.2}}
 JohtoMap["National Park Stop House 1"] = {["National Park"] = {0.2}, ["Route 35_A"] = {0.2}}
 JohtoMap["National Park Stop"] = {["National Park"] = {0.2}, ["Route 36"] = {0.2}}
 JohtoMap["National Park"] = {["National Park Stop"] = {1.5}, ["National Park Stop House 1"] = {1.5}}

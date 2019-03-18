@@ -33,4 +33,9 @@ elevatorExceptions["Lilycove Department Store Elevator"] = {
     ["Lilycove Department Store 4F"] = {{1, 1}, {"4F."}, "What floor would you like to shift to today?", "You are now on floor 4!", false, {2, 5}},
     ["Lilycove Department Store 5F"] = {{1, 1}, {"5F."}, "What floor would you like to shift to today?", "You are now on floor 5!", false, {2, 5}}
 }
+elevatorExceptions["Rocket Hideout Elevator"] = {
+    ["Rocket Hideout B1F_B"] = {{1, 1}, {"B1F"}, "What floor would you like to transport to?", "You have arrived on B1 Floor", false, {2, 5}},
+    ["Rocket Hideout B2F"] = {{1, 1}, {"B2F"}, "What floor would you like to transport to?", "You have arrived on B2 Floor", false, {2, 5}},
+    ["Rocket Hideout B4F"] = {{1, 1}, {"B4F"}, "What floor would you like to transport to?", "You have arrived on B4 Floor", false, {2, 5}},
+}
 return elevatorExceptions
