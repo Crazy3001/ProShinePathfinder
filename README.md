@@ -11,4 +11,4 @@ with a dozen changes to both.
 - [ProShinePathfinder](https://github.com/MeltWS/ProShinePathfinder)  
   
 ### Contributors  
-- g0ld, MeltWS, Rympex, TybaIt, Crazy3001, vladslav, Emuuung  
+- g0ld, MeltWS, Rympex, TybaIt, Zonz, Crazy3001, vladslav, Emuuung  

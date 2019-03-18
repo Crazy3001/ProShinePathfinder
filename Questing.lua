@@ -11,8 +11,8 @@ description = [[
 ║   to as far as possible! »
 ║
 ║ 𝐓𝐡𝐚𝐧𝐤𝐬 𝐭𝐨 ..
-║ g0ld, TybaIt, MeltWS, Rympex, Emuuung, Crazy3001,
-║ vladslav and future GitHub.com contributers.
+║ g0ld, TybaIt, MeltWS, Zonz, Rympex, vladslav, Emuuung,
+║ Crazy3001 and future GitHub.com contributers.
 ║
 ║ 𝐆𝐢𝐭𝐇𝐮𝐛: https://github.com/g0ldPRO/Questing.lua
 ╚═════════════════════════════════════════════════╝]]
