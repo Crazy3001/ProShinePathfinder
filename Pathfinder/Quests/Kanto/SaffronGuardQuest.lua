@@ -26,7 +26,6 @@ function SaffronGuardQuest:new()
 	o.BUY_BIKE = true
 	return o
 end
-
 function SaffronGuardQuest:isDoable()
 	if self:hasMap() and not hasItem("Marsh Badge") then
 		return true
@@ -70,7 +69,7 @@ function SaffronGuardQuest:VermilionPokemart()
 end
 
 function SaffronGuardQuest:VermilionCity()
-	if self.BUY_BIKE and getMoney() > 75000 and not hasItem("Bike Voucher") and not hasItem("Bicycle") then
+	if not self.dialogs.questDittoAccept.state and self.BUY_BIKE and getMoney() > 75000 and not hasItem("Bike Voucher") and not hasItem("Bicycle") then
 		return moveToCell(32,21)
 	elseif self:needPokemart() and getMoney() > 200 then
 		return PathFinder.moveTo(getMapName(), "Vermilion Pokemart")
@@ -82,7 +81,7 @@ function SaffronGuardQuest:VermilionCity()
 end
 
 function SaffronGuardQuest:VermilionHouse2Bottom()
-    if self.BUY_BIKE and getMoney() > 75000 and not hasItem("Bike Voucher") and not hasItem("Bicycle") then
+    if not self.dialogs.questDittoAccept.state and self.BUY_BIKE and getMoney() > 75000 and not hasItem("Bike Voucher") and not hasItem("Bicycle") then
         return talkToNpcOnCell(6,6)
     end
     return PathFinder.moveTo(getMapName(), "Vermilion City")

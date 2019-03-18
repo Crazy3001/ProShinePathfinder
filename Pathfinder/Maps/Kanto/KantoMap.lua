@@ -220,12 +220,12 @@ KantoMap["Rock Tunnel 2_A"] = {["Rock Tunnel 1_B"] = {1.5}, ["Rock Tunnel 1_A"] 
 KantoMap["Rock Tunnel 2_B"] = {["Rock Tunnel 1_C"] = {1.5}, ["Rock Tunnel 1_B"] = {1.5}}
 KantoMap["Rocket Hideout B1F_A"] = {["Celadon Gamecorner Stairs"] = {1}, ["Rocket Hideout B2F"] = {0.2}}
 KantoMap["Rocket Hideout B1F_B"] = {["Rock Hideout Elevator"] = {0.2}, ["Rocket Hideout B1F_C"] = {0.2}}
-KantoMap["Rocket Hideout B1F_D"] = {["Rocket Hideout B2F"] = {0.2}}
-KantoMap["Rocket Hideout B1F_C"] = {["Rocket Hideout B1F_A"] = {0.2}}
-KantoMap["Rocket Hideout B2F"] = {["Rocket Hideout B1F_A"] = {0.2}, ["Rocket Hideout B3F"] = {1}, ["Rocket Hideout B1F_D"] = {0.2}, ["Rocket Hideout Elevator"] = {1}}
-KantoMap["Rocket Hideout B3F"] = {["Rocket Hideout B2F"] = {0.2}, ["Rocket Hideout B4F_A"] = {0.2}}
-KantoMap["Rocket Hideout B4F_A"] = {["Rocket Hideout Elevator"] = {0.2}}
-KantoMap["Rocket Hideout B4F_B"] = {["Rocket Hideout Elevator"] = {0.2}}
+KantoMap["Rocket Hideout B1F_D"] = {["Rocket Hideout B2F"] = {1}}
+KantoMap["Rocket Hideout B1F_C"] = {["Rocket Hideout B1F_A"] = {1}}
+KantoMap["Rocket Hideout B2F"] = {["Rocket Hideout B1F_A"] = {1}, ["Rocket Hideout B3F"] = {1}, ["Rocket Hideout B1F_D"] = {1}, ["Rocket Hideout Elevator"] = {1.5}}
+KantoMap["Rocket Hideout B3F"] = {["Rocket Hideout B2F"] = {1.5}, ["Rocket Hideout B4F_A"] = {1}}
+KantoMap["Rocket Hideout B4F_A"] = {["Rocket Hideout Elevator"] = {1.5}}
+KantoMap["Rocket Hideout B4F_B"] = {["Rocket Hideout Elevator"] = {1.5}}
 KantoMap["Route 1 Stop House"] = {["Viridian City"] = {0.2}, ["Route 1"] = {0.2}}
 KantoMap["Route 1"] = {["Pallet Town"] = {1}, ["Route 1 Stop House"] = {1}}
 KantoMap["Route 10_A"] = {["Route 9"] = {0.5}, ["Rock Tunnel 1_A"] = {0.5}, ["Route 10_C"] = {1, {["abilities"] = {"dig"}}}, ["Pokecenter Route 10"] = {0.5}}

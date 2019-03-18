@@ -369,15 +369,15 @@ function Quest:dialog(message)
 end
 
 function Quest:battleMessage(message)
-	if Lib.stringContains(message, "You can not run away!") then
+	if stringContains(message, "You can not run away!") then
 		Lib.canRun = false
 	elseif self.pokemon ~= nil and self.forceCaught ~= nil then
-		if Lib.stringContains(message, "caught") and Lib.stringContains(message, self.pokemon) then --Force caught the specified pokemon on quest 1time
+		if stringContains(message, "caught") and stringContains(message, self.pokemon) then --Force caught the specified pokemon on quest 1time
 			log("Selected Pokemon: " .. self.pokemon .. " is Caught")
 			self.forceCaught = true
 			return true
 		end
-	elseif Lib.stringContains(message, "black out") and self.level < 100 and self:isTrainingOver() then
+	elseif stringContains(message, "black out") and self.level < 100 and self:isTrainingOver() then
         log('╔═════════════════╣ 𝐐𝐔𝐄𝐒𝐓 𝐅𝐀𝐈𝐋𝐄𝐃 ╠═════════════════╗')
         log('║')
         log('║ « ' .. self.name .. ' »')
@@ -393,7 +393,7 @@ function Quest:battleMessage(message)
 end
 
 function Quest:systemMessage(message)
-	if Lib.stringContains(message, "You can't do this while surfing!") then
+	if stringContains(message, "You can't do this while surfing!") then
 		self.bikeUsable = false
 	end	
 	return false

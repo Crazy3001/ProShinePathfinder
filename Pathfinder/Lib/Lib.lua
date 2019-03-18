@@ -106,15 +106,6 @@ function Lib.assert(test, functionName, message)
 	return true
 end
 
-function Lib.stringContains(haystack, needle)
-	haystack = string.upper(haystack)
-	needle   = string.upper(needle)
-	if string.find(haystack, needle) ~= nil then
-		return true
-	end
-	return false
-end
-
 function Lib.removeCharacter(str, character)
 	return str:gsub("%" .. character .. "+", "")
 end

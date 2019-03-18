@@ -48,7 +48,7 @@ function onPathAction()
         if inRectangle(70,3,91,21) then
             moveToGrass()
         else
-            moveToMap("Route 16 Stop House")
+            PathFinder.moveTo(getMapName(), "Route 16 Stop House")
         end
     end
 end

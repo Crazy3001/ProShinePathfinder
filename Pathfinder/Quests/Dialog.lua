@@ -19,7 +19,7 @@ end
 
 function Dialog:messageMatch(message)
 	for key, text in pairs(self.text) do
-		if Lib.stringContains(message, text) then
+		if stringContains(message, text) then
 			return true
 		end
 	end
