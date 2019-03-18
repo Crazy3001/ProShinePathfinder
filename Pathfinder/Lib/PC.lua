@@ -3,25 +3,25 @@
 -- terms of the Do What The Fuck You Want To Public License, Version 2,
 -- as published by Sam Hocevar. See the COPYING file for more details.
 
-local pc = {}
+local PC = {}
 
-local sys = require("Pathfinder/Lib/Lib")
+local Lib = require("Pathfinder/Lib/Lib")
 
-function pc.isValidIndex(boxIndex, pokemonIndex)
+function PC.isValidIndex(boxIndex, pokemonIndex)
 	if getCurrentBoxId() == boxIndex and pokemonIndex <= getCurrentBoxSize() then
 		return true
 	end
 	return false
 end
 
-function pc.isReady()
+function PC.isReady()
 	if isPCOpen() and isCurrentPCBoxRefreshed() then
 			return true
 	end
 	return false
 end
 
-function pc.use()
+function PC.use()
 	if isPCOpen() then
 		if isCurrentPCBoxRefreshed() then
 			return
@@ -31,20 +31,20 @@ function pc.use()
 		end
 	else
 		if not usePC() then
-			Lib.error("libpc.use", "Tried to use the PC in a zone without PC")
+			Lib.error("libPC.use", "Tried to use the PC in a zone without PC")
 		end
 	end
 end
 
 -- this function needs to be called multiple time
 -- returns true once the swap is done
-function pc.swap(boxIndex, boxPokemonIndex, teamIndex)
-	if not pc.isReady() then
-		pc.use()
+function PC.swap(boxIndex, boxPokemonIndex, teamIndex)
+	if not PC.isReady() then
+		PC.use()
 		return false
 	else
 		if not swapPokemonFromPC(boxIndex, boxPokemonIndex, teamIndex) then
-			return Lib.error("libpc.swap", "Failed to swap")
+			return Lib.error("libPC.swap", "Failed to swap")
 		else
 			return true
 		end
@@ -54,13 +54,13 @@ end
 
 -- this function needs to be called multiple time
 -- returns true once deposit is done
-function pc.deposit(teamIndex)
-	if not pc.isReady() then
-		pc.use()
+function PC.deposit(teamIndex)
+	if not PC.isReady() then
+		PC.use()
 		return false
 	else
 		if not depositPokemonToPC(__teamIndex) then
-			return Lib.error("libpc.deposit", "Failed to deposit")
+			return Lib.error("libPC.deposit", "Failed to deposit")
 		end
 		return true
 	end
@@ -69,24 +69,24 @@ end
 
 -- this function needs to be called multiple time
 -- returns true once withdraw is done
-function pc.withdraw(boxIndex, boxPokemonIndex)
-	if not pc.isReady() then
-		pc.use()
+function PC.withdraw(boxIndex, boxPokemonIndex)
+	if not PC.isReady() then
+		PC.use()
 		return false
 	else
 		if getTeamSize() == 6 then
-			return Lib.error("libpc.withdraw", "Team full. Could not withdraw the pokemon "
+			return Lib.error("libPC.withdraw", "Team full. Could not withdraw the pokemon "
 				.. getPokemonNameFromPC(boxIndex, boxPokemonIndex))
 		end
 		if not withdrawPokemonFromPC(boxIndex, boxPokemonIndex, teamIndex) then
-			return Lib.error("libpc.deposit", "Failed to deposit")
+			return Lib.error("libPC.deposit", "Failed to deposit")
 		end
 		return true
 	end
 	return false
 end
 
-function pc.gatherDatas(sortingFunction)
+function PC.gatherDatas(sortingFunction)
 	
 end
 
@@ -102,9 +102,9 @@ end
 		return false
 	end
 	
-	pc.sort(sortByUniqueId)
+	PC.sort(sortByUniqueId)
 --]]
-function pc.sort(sortingFunction)
+function PC.sort(sortingFunction)
 
 end
 

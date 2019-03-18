@@ -3,7 +3,6 @@ local function nTimes(n, f, x) for i = 0, n - 1 do x = f(x) end return x end -- 
 local function rmlast(str) return str:sub(1, -2):match(".+[%./]") or "" end -- removes last dir / file from the callee path
 local cppdpath = nTimes(3, rmlast, cpath) -- callee parent of parent dir path
 local cpppdpath = rmlast(cppdpath) -- callee parent parent of parent dir path
-log(cppdpath)
 local aStar               = require (cppdpath .. "Lib/lua-astar/AStar")
 local Lib                 = require (cppdpath .. "Lib/Lib")
 local Game                = require (cppdpath .. "Lib/Game")
