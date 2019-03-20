@@ -195,7 +195,7 @@ return {
     },
     ["Cinnabar mansion 1"] = {
         ["Cinnabar mansion 1_A"] = {{1, 3, 18, 42}, {19, 3, 32, 23}, {33, 3, 33, 12}, {34, 3, 41, 5}},
-        ["Cinnabar mansion 1_B"] = {{20, 24, 41, 42}, {33, 16, 41, 23}, {35, 6, 41, 15}}
+        ["Cinnabar mansion 1_B"] = {{20, 24, 41, 42}, {33, 16, 41, 23}, {35, 6, 41, 15}},
     },
     ["Cinnabar mansion 3"] = {
         ["Cinnabar mansion 3_A"] = {{1, 9, 14, 25}}, -- bottom left

@@ -9,6 +9,7 @@ local Lib    = require "Pathfinder/Lib/Lib"
 local Game   = require "Pathfinder/Lib/Game"
 local Quest  = require "Pathfinder/Quests/Quest"
 local Dialog = require "Pathfinder/Quests/Dialog"
+local PathFinder = require "Pathfinder/MoveToApp"
 
 local name		  = 'Silph Co'
 local description = 'Rocket Team Quest'
