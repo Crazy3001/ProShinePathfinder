@@ -161,10 +161,15 @@ function Quest:stopTraining()
 	self.healPokemonOnceTrainingIsOver = true
 end
 
-function Quest:needPokemart()
+function Quest:needPokemart(item, amount, price)
 	-- TODO: ItemManager
-	if getItemQuantity("Pokeball") < 50 and getMoney() >= 200 then
-		return true
+    if not item or not amount or not price then
+        item = "Pokeball"
+        amount = 50
+        price = 200
+    end
+	if getItemQuantity(item) < amount and getMoney() >= price then
+        return true
 	end
 	return false
 end

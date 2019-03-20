@@ -16,6 +16,7 @@ local description = 'Route 8 To Cinnabar Island'
 local level = 55
 
 local ToCinnabarQuest = Quest:new()
+local dittoCaught = false
 
 function ToCinnabarQuest:new()
 	local o = Quest.new(ToCinnabarQuest, name, description, level)
@@ -37,9 +38,58 @@ function ToCinnabarQuest:isDone()
 end
 
 function ToCinnabarQuest:Route8()
+    if not dittoCaught then
+        if not self:needPokemart("Great Ball", 25, 600) then
+            return moveToRectangle(38, 11, 40, 15)
+        else
+            return moveToRectangle(3, 12, 3, 13)
+        end
+    end
 	return PathFinder.moveTo(getMapName(), "Lavender Town")
 end
-
+function ToCinnabarQuest:Route8StopHouse()
+    if not dittoCaught then
+        if self:needPokemart("Great Ball", 25, 600) then
+            return moveToRectangle(0, 6, 0, 7)
+        else
+            return moveToRectangle(10, 6, 10, 7)
+        end
+    end
+    return moveToRectangle(10, 6, 10, 7)
+end
+function ToCinnabarQuest:SaffronPokemart()
+    if self:needPokemart("Great Ball", 25, 600) then
+        return PathFinder.usePokemart("Saffron Pokemart", "Great Ball", math.floor(math.abs(getMoney()/600)))
+    else
+        return moveToRectangle(4, 12, 5, 12)
+    end
+end
+function ToCinnabarQuest:SaffronCity()
+    if not dittoCaught then
+        if self:needPokemart("Great Ball", 25, 600) then
+            return moveToCell(43, 25)
+        else
+            return moveToRectangle(60, 38, 60, 39)
+        end
+    end
+    return moveToRectangle(60, 38, 60, 39)
+end
+registerHook("OnBattleAction", function()
+if not dittoCaught then
+        if isWildBattle() and GetOpponentName() == "Ditto" then
+            if hasItem("Pokeball") or hasItem("Great Ball") or hasItem("Ultra Ball") then
+                return useItem("Pokeball") or useItem("Great Ball") or useItem("Ultra Ball")
+            else
+                return attack()
+            end
+        end
+    end
+end)
+registerHook("OnBattleMessage", function(message)
+    if stringContains(message, "Success! You caught Ditto!") then
+        dittoCaught = true
+    end
+end)
 function ToCinnabarQuest:PokecenterLavender()
 	self:pokecenter("Lavender Town")
 end
