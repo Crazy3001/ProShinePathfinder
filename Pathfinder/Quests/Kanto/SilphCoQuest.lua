@@ -13,7 +13,7 @@ local PathFinder = require "Pathfinder/MoveToApp"
 
 local name		  = 'Silph Co'
 local description = 'Rocket Team Quest'
-local level = 70
+local level = 60
 
 local dialogs = {
 	silphCoDone = Dialog:new({ 
@@ -35,14 +35,73 @@ function SilphCoQuest:isDoable()
 end
 
 function SilphCoQuest:isDone()
-	if getMapName() == "Saffron City" or getMapName() == "Pokecenter Saffron" then
-		return true
-	else
-		return false
-	end
+    return dialogs.silphCoDone.state
 end
-
+function SilphCoQuest:PokecenterCeladon()
+    if self:needPokecenter() then
+        return usePokecenter()
+    else
+        return moveToRectangle(8, 22, 9, 22)
+    end
+end
+function SilphCoQuest:Route16()
+    if not self:isTrainingOver() then
+        if self:needPokecenter() then
+            return moveToRectangle(90, 19, 90, 20)
+        else
+            return moveToGrass()
+        end
+    else
+        return moveToRectangle(90, 19, 90, 20)
+    end
+end
+function SilphCoQuest:CeladonCity()
+    if not self:isTrainingOver() then
+        if self:needPokecenter() then
+            return moveToCell(52, 19)
+        else
+            return moveToRectangle(0, 41, 0, 43) -- Route 16_B
+        end
+    else
+        return moveToRectangle(71, 23, 71, 25) -- Route 7
+    end
+end
+function SilphCoQuest:Route7()
+    if not self:isTrainingOver() then
+        return moveToRectangle(0, 23, 0, 25) -- Celadon City
+    else
+        return moveToRectangle(21, 24, 21, 25) -- Route 7 Stop House
+    end
+end
+function SilphCoQuest:Route7StopHouse()
+    if not self:isTrainingOver() then
+        return moveToRectangle(0, 6, 0, 7) -- Route 7
+    else
+        return moveToRectangle(10, 6, 10, 7) -- Saffron City
+    end
+end
+function SilphCoQuest:SaffronCity()
+    if not self:isTrainingOver() then
+        return moveToRectangle(5, 38, 5, 39) -- Route 7
+    else
+        if needPokeCenter() then
+            return moveToCell(19, 45)
+        else
+            return moveToRectangle(33, 36, 34, 36) -- Silph Co 1F
+        end
+    end
+end
+function PokecenterSaffron()
+    if self:needPokecenter() then
+        return usePokecenter()
+    else
+        return moveToRectangle(8, 22, 9, 22) -- Saffron City
+    end
+end
 function SilphCoQuest:SilphCo1F()
+    if not self:isTrainingOver() then
+        return PathFinder.moveTo(getMapName(), "Route 16_B")
+    end
 	if (isNpcOnCell(19,7) and isNpcOnCell(19,7)) or dialogs.silphCoDone.state then
 		return PathFinder.moveTo(getMapName(), "Saffron City")
 	else
