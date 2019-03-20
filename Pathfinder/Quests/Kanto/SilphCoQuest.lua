@@ -13,7 +13,7 @@ local PathFinder = require "Pathfinder/MoveToApp"
 
 local name		  = 'Silph Co'
 local description = 'Rocket Team Quest'
-local level = 55
+local level = 70
 
 local dialogs = {
 	silphCoDone = Dialog:new({ 

@@ -392,7 +392,7 @@ mapLink["Silph Co 9F"] = {["Silph Co Elevator"] = {{25, 5}}, ["Silph Co 8F"] = {
 mapLink["Silph Co 10F"] = {["Silph Co Elevator"] = {{14, 5}}, ["Silph Co 9F"] = {{6, 4}}, ["Silph Co 11F_A"] = {{10, 3}}, ["Silph Co 4F"] = {{15, 12}, {11, 18}, {15, 21}}}
 mapLink["Silph Co 11F_A"] = {["Silph Co Elevator"] = {{13, 5}}, ["Silph Co 10F"] = {{7, 4}}}
 mapLink["Silph Co 11F_B"] = {["Silph Co 7F_B"] = {{3, 7}}}
-mapLink["Silph Co Elevator"] = {["Silph Co 1F"] = {2, 5, 3, 5}}
+mapLink["Silph Co Elevator"] = {["Silph Co 1F"] = {{2, 5, 3, 5}}}
 mapLink["SSAnne Basement"] = {["SSAnne Basement Room5"] = {{2, 2}}, ["SSAnne Basement Room4"] = {{7, 2}}, ["SSAnne Basement Room3"] = {{12, 2}}, ["SSAnne Basement Room2"] = {{17, 2}}, ["SSAnne Basement Room1"] = {{22, 2}}, ["SSAnne 1F"] = {{27, 3}}}
 mapLink["SSAnne Basement Room5"] = {["SSAnne Basement"] = {{5, 11}}}
 mapLink["SSAnne Basement Room4"] = {["SSAnne Basement"] = {{5, 11}}}
