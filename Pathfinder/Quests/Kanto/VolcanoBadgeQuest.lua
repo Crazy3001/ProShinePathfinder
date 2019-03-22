@@ -40,7 +40,7 @@ function VolcanoBadgeQuest:PokecenterCinnabar()
 end
 
 function VolcanoBadgeQuest:CinnabarIsland()
-	if self:needPokecenter() or not Game.isTeamFullyHealed() or not self.registeredPokecenter == "Pokecenter Cinnabar" then
+	if self:needPokecenter() or not self.registeredPokecenter == "Pokecenter Cinnabar" then
 		return PathFinder.moveTo(getMapName(), "Pokecenter Cinnabar")
 	elseif not self:isTrainingOver() then
 		return PathFinder.moveTo(getMapName(), "Route 20")
@@ -67,9 +67,11 @@ end
 
 function VolcanoBadgeQuest:CinnabarGym()
 	if not hasItem("Volcano Badge") then
-		if isNpcOnCell(6,7) then
-			return talkToNpcOnCell(6,7)
-		else
+		if isNpcOnCell(6, 8) then
+			return talkToNpcOnCell(6, 8)
+		elseif isNpcOnCell(6, 7) then
+			return talkToNpcOnCell(6, 7)
+        else
 			return PathFinder.moveTo(getMapName(), "Cinnabar Gym B1F")
 		end
 	else

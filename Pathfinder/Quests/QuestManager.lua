@@ -149,7 +149,7 @@ function QuestManager:new(o)
 end
 
 function QuestManager:message()
-	if self.selected then
+	if self.selected != nil then
 		return self.selected:message()
 	end
 	return nil
@@ -223,7 +223,7 @@ function QuestManager:battle()
 end
 
 function QuestManager:dialog(message)
-	if not self.selected then
+	if self.selected == nil then
 		return false
 	end
 	return self.selected:dialog(message)

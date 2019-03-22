@@ -13,7 +13,7 @@ local PathFinder = require "Pathfinder/MoveToApp"
 
 local name		  = 'Earth Badge'
 local description = ' Beat Giovanni'
-local level = 65
+local level = 75
 
 local EarthBadgeQuest = Quest:new()
 
@@ -36,13 +36,7 @@ function EarthBadgeQuest:isDone()
 end
 
 function EarthBadgeQuest:Route21()
-	if isNpcOnCell(16,1) then --Item: Rawst Berry
-		return talkToNpcOnCell(16,1)
-	elseif isNpcOnCell(17,1) then --Item: Rawst Berry
-		return talkToNpcOnCell(17,1)
-	else
-		return PathFinder.moveTo(getMapName(), "Pallet Town")
-	end
+	return PathFinder.moveTo(getMapName(), "Pallet Town")
 end
 
 function EarthBadgeQuest:PlayerBedroomPallet()
@@ -58,13 +52,7 @@ function EarthBadgeQuest:PalletTown()
 end
 
 function EarthBadgeQuest:Route1()
-	if isNpcOnCell(13,36) then --Item: Oran Berry
-		return talkToNpcOnCell(13,36)
-	elseif isNpcOnCell(14,36) then --Item: Pecha Berry
-		return talkToNpcOnCell(14,36)
-	else
-		return PathFinder.moveTo(getMapName(), "Route 1 Stop House")
-	end
+	return PathFinder.moveTo(getMapName(), "Route 1 Stop House")
 end
 
 function EarthBadgeQuest:Route1StopHouse()
@@ -80,7 +68,7 @@ function EarthBadgeQuest:ViridianPokemart()
 end
 
 function EarthBadgeQuest:ViridianCity()
-	if self:needPokecenter() or not Game.isTeamFullyHealed() or not self.registeredPokecenter == "Pokecenter Viridian" then
+	if self:needPokecenter() or not self.registeredPokecenter == "Pokecenter Viridian" then
 		return PathFinder.moveTo(getMapName(), "Pokecenter Viridian")
 	elseif self:needPokemart() then
 		return PathFinder.moveTo(getMapName(), "Viridian Pokemart")
