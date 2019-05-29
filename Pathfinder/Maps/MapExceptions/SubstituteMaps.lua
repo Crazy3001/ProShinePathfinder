@@ -320,7 +320,7 @@ return {
         ["Dark Cave North_B"] = {{13, 52, 21, 62}}, -- bottom left
     },
     ["Dark Cave South"] = {
-        ["Dark Cave South_A"] = {{14, 16, 27, 27}, {14, 28, 26, 34}, {27, 33, 28, 34}}, -- left side
+        ["Dark Cave South_A"] = {{14, 16, 27, 27}, {14, 28, 26, 35}, {27, 33, 28, 34}}, -- left side
         ["Dark Cave South_B"] = {{28, 15, 36, 27}}, -- middle water to North_B
         ["Dark Cave South_C"] = {{27, 28, 41, 29}, {42, 13, 67, 60}}, -- middle / right with most digs
         ["Dark Cave South_D"] = {{57, 57, 65, 60}}, -- bottom right to Route 46_A

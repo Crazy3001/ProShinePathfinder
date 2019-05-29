@@ -260,9 +260,9 @@ local function movingApply(from, toMap)
 	Lib.log1time("Path: Maps Remains: " .. #pathSolution .. "  Moving To: --> " .. toMap)
 	if handleException(from, toMap) then
 		return true
-	elseif mapLinks[from][toMap] then
-		mapLink = mapLinks[from][toMap]
-		link = math.random(#mapLink)
+	elseif mapLinks[from] and mapLinks[from][toMap] then
+		local mapLink = mapLinks[from][toMap]
+		local link = math.random(#mapLink)
 		if #mapLink[link] == 2 then
 			moveToCell(mapLink[link][1], mapLink[link][2])
 		else

@@ -268,7 +268,7 @@ KantoMap["Route 26_A"] = {["Route 26 House1"] = {1}, ["Route 26 House 2"] = {1},
 KantoMap["Route 26_B"] = {["Route 27_B"] = {0.3}}
 KantoMap["Route 27 House1"] = {["Route 27_B"] = {1}}
 KantoMap["Route 27_A"] = {["New Bark Town"] = {1, {["abilities"] = {"surf"}}}, ["Tohjo Falls"] = {1, {["abilities"] = {"surf"}}}}
-KantoMap["Route 27_B"] = {["Route 27 House1"] = {1}, ["Tohjo Falls"] = {1, {["abilities"] = {"surf"}}}, ["Route 26_A"] = {1.5, {["abilities"] = {"surf"}}}}
+KantoMap["Route 27_B"] = {["Route 27 House1"] = {1}, ["Tohjo Falls"] = {1, {["abilities"] = {"surf"}}}, ["Route 26_A"] = {1.5}}
 KantoMap["Route 28 House"] = {["Route 28_B"] = {1}}
 KantoMap["Route 28_A"] = {["Pokemon League Reception Gate"] = {1}, ["Mt. Silver Exterior"] = {1}}
 KantoMap["Route 28_B"] = {["Mt. Silver Exterior"] = {1}, ["Route 28_A"] = {0.2}, ["Route 28 House"] = {1}}

@@ -135,9 +135,10 @@ JohtoMap["Goldenrod Mart 6"] = {["Goldenrod Mart 5"] = {1}, ["Goldenrod Mart Ele
 JohtoMap["Goldenrod Mart B1F"] = {["Goldenrod Mart Elevator"] = {1}, ["Underground Warehouse"] = {1}}
 JohtoMap["Goldenrod Mart Elevator"] = {["Goldenrod Mart 2"] = {0.2}, ["Goldenrod Mart 1"] = {0.2}, ["Goldenrod Mart 4"] = {0.2}, ["Goldenrod Mart 3"] = {0.2}, ["Goldenrod Mart 5"] = {0.2}, ["Goldenrod Mart 6"] = {0.2}, ["Goldenrod Mart B1F"] = {0.2}}
 JohtoMap["Goldenrod Radio Station Floor 1"] = {["Goldenrod City"] = {1}}
+JohtoMap["Goldenrod Underground Basement"] = {["Goldenrod Underground Path"] = {1}, ["Underground Warehouse"] = {1}}
 JohtoMap["Goldenrod Underground Entrance Bottom"] = {["Goldenrod City"] = {0.2}, ["Goldenrod Underground Path"] = {0.2}}
 JohtoMap["Goldenrod Underground Entrance Top"] = {["Goldenrod City"] = {0.2}, ["Goldenrod Underground Path"] = {0.2}}
-JohtoMap["Goldenrod Underground Path"] = {["Goldenrod Underground Entrance Top"] = {1}, ["Goldenrod Underground Entrance Bottom"] = {1}, ["Underground Warehouse"] = {1}}
+JohtoMap["Goldenrod Underground Path"] = {["Goldenrod Underground Entrance Top"] = {1}, ["Goldenrod Underground Entrance Bottom"] = {1}, ["Goldenrod Underground Basement"] = {1}}
 JohtoMap["Ice Path 1F_A"] = {["Route 44"] = {3}, ["Ice Path B1F_A"] = {3}}
 JohtoMap["Ice Path 1F_B"] = {["Blackthorn City"] = {1}, ["Ice Path B1F_B"] = {1}}
 JohtoMap["Ice Path B1F_A"] = {["Ice Path B2F_A"] = {0.5}, ["Ice Path 1F_A"] = {1.5}}
@@ -222,13 +223,13 @@ JohtoMap["Route 35 Stop House"] = {["Goldenrod City"] = {0.2}, ["Route 35_A"] = 
 JohtoMap["Route 35_A"] = {["National Park Stop House 1"] = {1}, ["Route 35 Stop House"] = {1}, ["Route 35_B"] = {1, {["abilities"] = {"cut"}}}}
 JohtoMap["Route 35_B"] = {["Route 35_A"] = {0, {["abilities"] = {"cut"}}}, ["Route 36"] = {0.2}}
 JohtoMap["Route 36 Stop"] = {["Route 36"] = {0.2}, ["Violet City"] = {0.2}}
-JohtoMap["Route 36"] = {["Route 35_B"] = {1}, ["Route 36 Stop"] = {1}, ["Route 37"] = {1}, ["Ruins Of Alph Stop House 1"] = {1}}
+JohtoMap["Route 36"] = {["National Park Stop"] = {1}, ["Route 35_B"] = {1}, ["Route 36 Stop"] = {1}, ["Route 37"] = {1}, ["Ruins Of Alph Stop House 1"] = {1}}
 JohtoMap["Route 37"] = {["Ecruteak City"] = {1}, ["Route 36"] = {1}}
 JohtoMap["Route 38"] = {["Ecruteak Stop House 1"] = {1}, ["Route 39"] = {1}}
 JohtoMap["Route 39 House"] = {["Route 39"] = {1}}
 JohtoMap["Route 39"] = {["Route 39 House"] = {1}, ["Miltank Barn"] = {1}, ["Olivine City"] = {1}, ["Route 38"] = {1}}
 JohtoMap["Route 40"] = {["Battle Road"] = {1}, ["Olivine City"] = {1}, ["Route 41"] = {2, {["abilities"] = {"surf"}}}}
-JohtoMap["Route 41"] = {["Cianwood City"] = {2}, ["Route 40"] = {2}, ["Whirl Islands 1F NorthEast_A"] = {2}, ["Whirl Islands 1F NorthWest"] = {2}, ["Whirl Islands 1F SouthWest"] = {2}}
+JohtoMap["Route 41"] = {["Cianwood City"] = {2}, ["Route 40"] = {2}, ["Whirl Islands 1F SouthEast"] = {2}, ["Whirl Islands 1F NorthEast_A"] = {2}, ["Whirl Islands 1F NorthWest"] = {2}, ["Whirl Islands 1F SouthWest"] = {2}}
 JohtoMap["Route 42_A"] = {["Ecruteak Stop House 2"] = {0.2}, ["Mt. Mortar 1F_A"] = {0.2}, ["Route 42_D"] = {0, {["abilities"] = {"dig"}}}}
 JohtoMap["Route 42_B"] = {["Mt. Mortar 1F_B"] = {0.2}, ["Route 42_A"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_C"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_D"] = {0.2, {["abilities"] = {"surf"}}}}
 JohtoMap["Route 42_C"] = {["Mt. Mortar 1F_D"] = {0.2}, ["Route 42_B"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_D"] = {0.2, {["abilities"] = {"surf"}}}}
@@ -244,11 +245,17 @@ JohtoMap["Route 47_A"] = {["Cliff Cave 1F"] = {1}, ["Cliff Edge Gate"] = {1}}
 JohtoMap["Route 47_B"] = {["Cliff Cave B1F"] = {1}}
 JohtoMap["Route 47_C"] = {["Cliff Cave 2F"] = {2}, ["Route 48"] = {2}}
 JohtoMap["Route 48"] = {["Johto Safari Zone Lobby"] = {1}, ["Pokecenter Route 48"] = {1}, ["Route 47_C"] = {1}}
+JohtoMap["Ruins Of Alph Entrance"] = {["Ruins Of Alph_A"] = {1}, ["Ruins Of Alph Interior"] = {1}}
+JohtoMap["Ruins Of Alph Interior"] = {["Ruins Of Alph Entrance"] = {1}}
+JohtoMap["Ruins Of Alph Puzzle 1"] = {["Ruins Of Alph_A"] = {1}}--need pidgey
+JohtoMap["Ruins Of Alph Puzzle 2"] = {["Ruins Of Alph_D"] = {1}}--need spinarak
+JohtoMap["Ruins Of Alph Puzzle 3"] = {["Ruins Of Alph_C"] = {1}}--need magnemite
+JohtoMap["Ruins Of Alph Puzzle 4"] = {["Ruins Of Alph_B"] = {1}}--need rattata
 JohtoMap["Ruins Of Alph Stop House 1"--[[npcs entrance]]] = {["Route 36"] = {0.2}, ["Ruins Of Alph_A"] = {0.2, {["items"] = {"Zephyr Badge"}}}}
 JohtoMap["Ruins Of Alph Stop House"--[[npcs entrance]]] = {["Route 32"] = {1}, ["Ruins Of Alph_A"] = {0.2, {["items"] = {"Zephyr Badge"}}}}
-JohtoMap["Ruins Of Alph_A"--[[npcs entrance]]] = {["Item Maniac Johto"] = {1}, ["Ruins Research Center"] = {1}, ["Ruins Of Alph Stop House"] = {1}, ["Ruins Of Alph Stop House 1"] = {1}, ["Ruins Of Alph_D"] = {1, {["abilities"] = {"surf"}}}}
-JohtoMap["Ruins Of Alph_B"] = {["Union Cave 1F_B"] = {1}}
-JohtoMap["Ruins Of Alph_C"] = {["Ruins Of Alph_D"] = {0.2}, ["Union Cave 1F_A"] = {0.2}}
+JohtoMap["Ruins Of Alph_A"--[[npcs entrance]]] = {["Ruins Of Alph Entrance"] = {1}, ["Ruins Of Alph Puzzle 1"] = {1}, ["Item Maniac Johto"] = {1}, ["Ruins Research Center"] = {1}, ["Ruins Of Alph Stop House"] = {1}, ["Ruins Of Alph Stop House 1"] = {1}, ["Ruins Of Alph_D"] = {1, {["abilities"] = {"surf"}}}}
+JohtoMap["Ruins Of Alph_B"] = {["Ruins Of Alph Puzzle 4"] = {1}, ["Union Cave 1F_B"] = {1}}
+JohtoMap["Ruins Of Alph_C"] = {["Ruins Of Alph Puzzle 3"] = {1}, ["Ruins Of Alph_D"] = {0.2}, ["Union Cave 1F_A"] = {0.2}}
 JohtoMap["Ruins Of Alph_D"] = {["Ruins Of Alph_A"] = {0.5, {["abilities"] = {"surf"}}}}
 JohtoMap["Ruins Research Center"] = {["Ruins Of Alph_A"] = {1}}
 JohtoMap["Safari Johto Grass and Swamp Zone"] = {["Johto Safari Entrance"] = {1}}
@@ -262,7 +269,7 @@ JohtoMap["Sprout Tower F1_B"] = {["Sprout Tower F2_A"] = {1}, ["Sprout Tower F2_
 JohtoMap["Sprout Tower F2_A"] = {["Sprout Tower F1_A"] = {1}, ["Sprout Tower F1_B"] = {1}}
 JohtoMap["Sprout Tower F2_B"] = {["Sprout Tower F1_B"] = {1}, ["Sprout Tower F3"] = {1}}
 JohtoMap["Sprout Tower F3"] = {["Sprout Tower F2_B"] = {1}}
-JohtoMap["Underground Warehouse"] = {["Goldenrod Mart B1F"] = {1}, ["Goldenrod Underground Path"] = {1}}
+JohtoMap["Underground Warehouse"] = {["Goldenrod Mart B1F"] = {1}, ["Goldenrod Underground Basement"] = {1}}
 JohtoMap["Union Cave 1F_A"] = {["Union Cave B2F_A"] = {0.5}, ["Ruins Of Alph_C"] = {0.5}}
 JohtoMap["Union Cave 1F_B"] = {["Union Cave B2F_B"] = {0.5}, ["Ruins Of Alph_B"] = {0.5}}
 JohtoMap["Union Cave 1F_C"] = {["Union Cave 1F_D"] = {2.5, {["abilities"] = {"surf"}}}, ["Route 32"] = {2.5}, ["Route 33"] = {2.5}, ["Union Cave B1F_A"] = {2.5}}
