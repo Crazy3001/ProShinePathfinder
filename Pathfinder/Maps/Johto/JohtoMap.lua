@@ -105,6 +105,7 @@ JohtoMap["Ecruteak Gym"] = {["Ecruteak City"] = {1}}
 JohtoMap["Ecruteak Mart"] = {["Ecruteak City"] = {1}}
 JohtoMap["Ecruteak Stop House 1"] = {["Ecruteak City"] = {0.2}, ["Route 38"] = {0.2}}
 JohtoMap["Ecruteak Stop House 2"] = {["Ecruteak City"] = {0.2}, ["Route 42_A"] = {0.2}}
+JohtoMap["Forest Pit"] = {["Mt. Mortar Northern Entrance"] = {1}, ["Lake Cave"] = {1}}
 JohtoMap["Glitter Lighthouse 1F"] = {["Olivine City"] = {1}, ["Glitter Lighthouse 2F_A"] = {1}}
 JohtoMap["Glitter Lighthouse 2F_A"] = {["Glitter Lighthouse 1F"] = {1}, ["Glitter Lighthouse 3F_B"] = {1}}
 JohtoMap["Glitter Lighthouse 2F_B"] = {["Glitter Lighthouse 3F_A"] = {1}, ["Glitter Lighthouse 3F_B"] = {1}}
@@ -150,8 +151,10 @@ JohtoMap["Ilex Forest Stop House"] = {["Azalea Town"] = {0.2}, ["Ilex Forest_A"]
 JohtoMap["Ilex Forest_A"] = {["Ilex Forest Stop House"] = {1}, ["Ilex Forest_B"] = {1, {["abilities"] = {"cut"}}}}
 JohtoMap["Ilex Forest_B"] = {["Ilex Forest_A"] = {2, {["abilities"] = {"cut"}}}, ["Route 34 Stop House"] = {2}}
 JohtoMap["Item Maniac Johto"] = {["Ruins Of Alph_A"] = {1}}
+JohtoMap["Item Recyclers Room"] = {["Lake Cave"] = {1}}
 JohtoMap["Johto Safari Entrance"] = {["Safari Johto Wet Zone"] = {1}, ["Safari Johto Mountain Zone"] = {1}, ["Safari Johto Snow Zone"] = {1}, ["Safari Johto Grass and Swamp Zone"] = {1}}
 JohtoMap["Johto Safari Zone Lobby"] = {["Route 48"] = {1}, ["Johto Safari Entrance"] = {1}}
+JohtoMap["Lake Cave"] = {["Forest Pit"] = {1}, ["Item Recyclers Room"] = {1}}
 JohtoMap["Lake of Rage House 1"] = {["Lake of Rage_A"] = {1}}
 JohtoMap["Lake of Rage House 2"] = {["Lake of Rage_E"] = {1}}
 JohtoMap["Lake of Rage_A"] = {["Lake of Rage House 1"] = {1}, ["Route 43"] = {1}, ["Lake of Rage_C"] = {1, {["abilities"] = {"cut"}}}}
@@ -178,7 +181,8 @@ JohtoMap["Mt. Mortar 1F_G"] = {["Mt. Mortar Lower Cave"] = {1}}
 JohtoMap["Mt. Mortar B1F_A"] = {["Mt. Mortar 1F_B"] = {1}, ["Mt. Mortar B1F_B"] = {1, {["abilities"] = {"surf"}}}}
 JohtoMap["Mt. Mortar B1F_B"] = {["Mt. Mortar B1F_A"] = {1, {["abilities"] = {"surf"}}}, ["Mt. Mortar Lower Cave"] = {1}}
 JohtoMap["Mt. Mortar Lower Cave"] = {["Mt. Mortar 1F_C"] = {1.5}, ["Mt. Mortar 1F_A"] = {1.5}, ["Mt. Mortar 1F_E"] = {1.5}, ["Mt. Mortar 1F_G"] = {1.5}, ["Mt. Mortar 1F_D"] = {2}, ["Mt. Mortar B1F_B"] = {2.5}, ["Mt. Mortar Upper Cave"] = {2.5}}
-JohtoMap["Mt. Mortar Upper Cave"] = {["Mt. Mortar Lower Cave"] = {1.5, {["abilities"] = {"surf"}}}, ["Mt. Mortar 1F_F"] = {2}}
+JohtoMap["Mt. Mortar Northern Entrance"] = {["Mt. Mortar Upper Cave"] = {1}, ["Forest Pit"] = {1}}
+JohtoMap["Mt. Mortar Upper Cave"] = {["Mt. Mortar Northern Entrance"] = {1}, ["Mt. Mortar Lower Cave"] = {1.5, {["abilities"] = {"surf"}}}, ["Mt. Mortar 1F_F"] = {2}}
 JohtoMap["National Park Stop House 1"] = {["National Park"] = {0.2}, ["Route 35_A"] = {0.2}}
 JohtoMap["National Park Stop"] = {["National Park"] = {0.2}, ["Route 36"] = {0.2}}
 JohtoMap["National Park"] = {["National Park Stop"] = {1.5}, ["National Park Stop House 1"] = {1.5}}

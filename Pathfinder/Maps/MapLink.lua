@@ -481,17 +481,17 @@ mapLink["Cherrygrove City House 2"] = {["Cherrygrove City_A"] = {{7, 14, 8, 14}}
 mapLink["Cherrygrove City House 3"] = {["Cherrygrove City_A"] = {{6, 13}}}
 mapLink["Cherrygrove City_A"] = {["Route 29"] = {{63, 14, 63, 17}}, ["Route 30"] = {{35, 0, 37, 0}}, ["Mart Cherrygrove City"] = {{41, 6}}, ["Pokecenter Cherrygrove City"] = {{51, 6}}, ["Cherrygrove City House 1"] = {{33, 15}}, ["Cherrygrove City House 2"] = {{45, 15}}, ["Cherrygrove City House 3"] = {{53, 20}}}
 mapLink["Cherrygrove City_B"] = {["Route 30"] = {{56, 0, 62, 0}}}
---mapLink["Cianwood City Gym"] = {["Cianwood City"] = {1}}
---mapLink["Cianwood City"] = {["Cianwood Shop"] = {1}, ["Cianwood City Gym"] = {1}, ["Cianwood House 1"] = {1}, ["Cianwood House 2"] = {1}, ["Cianwood House 3"] = {1}, ["Cianwood House 4"] = {1}, ["Cliff Edge Gate"] = {1}, ["Pokecenter Cianwood"] = {1}, ["Route 41"] = {1, {["abilities"] = {"surf"}}}}
---mapLink["Cianwood House 1"] = {["Cianwood City"] = {1}}
---mapLink["Cianwood House 2"] = {["Cianwood City"] = {1}}
---mapLink["Cianwood House 3"] = {["Cianwood City"] = {1}}
---mapLink["Cianwood House 4"] = {["Cianwood City"] = {1}}
---mapLink["Cianwood Shop"] = {["Cianwood City"] = {1}}
---mapLink["Cliff Cave 1F"] = {["Cliff Cave 2F"] = {1}, ["Cliff Cave B1F"] = {1}, ["Route 47_A"] = {1}}
---mapLink["Cliff Cave 2F"] = {["Cliff Cave 1F"] = {1}, ["Route 47_C"] = {1}}
---mapLink["Cliff Cave B1F"] = {["Cliff Cave 1F"] = {1}, ["Route 47_B"] = {1}}
---mapLink["Cliff Edge Gate"] = {["Cianwood City"] = {1}, ["Route 47_A"] = {1}}
+mapLink["Cianwood City Gym"] = {["Cianwood City"] = {{32, 40}}}
+mapLink["Cianwood City"] = {["Cianwood Shop"] = {{15, 48}}, ["Cianwood City Gym"] = {{9, 37}}, ["Cianwood House 1"] = {{7, 45}}, ["Cianwood House 2"] = {{17, 42}}, ["Cianwood House 3"] = {{17, 36}}, ["Cianwood House 4"] = {{4, 18}}, ["Cliff Edge Gate"] = {{7, 29}}, ["Pokecenter Cianwood"] = {{24, 47}}, ["Route 41"] = {{31, 33, 31, 36}}}
+mapLink["Cianwood House 1"] = {["Cianwood City"] = {{6, 13}}}
+mapLink["Cianwood House 2"] = {["Cianwood City"] = {{6, 13}}}
+mapLink["Cianwood House 3"] = {["Cianwood City"] = {{6, 13}}}
+mapLink["Cianwood House 4"] = {["Cianwood City"] = {{6, 13}}}
+mapLink["Cianwood Shop"] = {["Cianwood City"] = {{7, 10, 8, 10}}}
+mapLink["Cliff Cave 1F"] = {["Cliff Cave 2F"] = {{14, 13}}, ["Cliff Cave B1F"] = {{21, 15}}, ["Route 47_A"] = {{17, 18}}}
+mapLink["Cliff Cave 2F"] = {["Cliff Cave 1F"] = {{13, 13}}, ["Route 47_C"] = {{18, 22}}}
+mapLink["Cliff Cave B1F"] = {["Cliff Cave 1F"] = {{15, 13}}, ["Route 47_B"] = {{14, 21}}}
+mapLink["Cliff Edge Gate"] = {["Cianwood City"] = {{35, 23}}, ["Route 47_A"] = {{13, 38}}}
 --mapLink["Dark Cave North_A"] = {["Route 45_A"] = {2}, ["Dark Cave North_B"] = {2, {["abilities"] = {"surf"}}}}
 --mapLink["Dark Cave North_B"] = {["Dark Cave South_B"] = {0.5}}
 mapLink["Dark Cave South_A"] = {["Route 31"] = {{15, 35}}}
@@ -513,7 +513,8 @@ mapLink["Ecruteak Dance Theater"] = {["Ecruteak City"] = {{10, 19}}}
 mapLink["Ecruteak Gym"] = {["Ecruteak City"] = {{13, 43}}}
 mapLink["Ecruteak Mart"] = {["Ecruteak City"] = {{4, 11}}}
 mapLink["Ecruteak Stop House 1"] = {["Ecruteak City"] = {{10, 6, 10, 7}}, ["Route 38"] = {{0, 6, 0, 7}}}
-mapLink["Ecruteak Stop House 2"] = {["Ecruteak City"] = {{0, 6, 0, 7}}}
+mapLink["Ecruteak Stop House 2"] = {["Ecruteak City"] = {{0, 6, 0, 7}}, ["Route 42_A"] = {{10, 6, 10, 7}}}
+mapLink["Forest Pit"] = {["Mt. Mortar Northern Entrance"] = {{26, 31}}, ["Lake Cave"] = {{30, 17}}}
 mapLink["Glitter Lighthouse 1F"] = {["Olivine City"] = {{7, 14, 8, 14}}, ["Glitter Lighthouse 2F_A"] = {{9, 5}}}
 mapLink["Glitter Lighthouse 2F_A"] = {["Glitter Lighthouse 1F"] = {{13, 7}}, ["Glitter Lighthouse 3F_B"] = {{12, 4}}}
 mapLink["Glitter Lighthouse 2F_B"] = {["Glitter Lighthouse 3F_A"] = {{3, 5}}, ["Glitter Lighthouse 3F_B"] = {{9, 12}}}
@@ -557,8 +558,10 @@ mapLink["Ilex Forest Stop House"] = {["Azalea Town"] = {{10, 6, 10, 7}}, ["Ilex 
 mapLink["Ilex Forest_A"] = {["Ilex Forest Stop House"] = {{10, 74, 10, 75}}}
 mapLink["Ilex Forest_B"] = {["Route 34 Stop House"] = {{7, 7, 8, 7}}}
 mapLink["Item Maniac Johto"] = {["Ruins Of Alph_A"] = {{6, 11}}}
---mapLink["Johto Safari Entrance"] = {["Safari Johto Wet Zone"] = {1}, ["Safari Johto Mountain Zone"] = {1}, ["Safari Johto Snow Zone"] = {1}, ["Safari Johto Grass and Swamp Zone"] = {1}}
---mapLink["Johto Safari Zone Lobby"] = {["Route 48"] = {1}, ["Johto Safari Entrance"] = {1}}
+mapLink["Item Recyclers Room"] = {["Lake Cave"] = {{10, 11}}}
+mapLink["Johto Safari Entrance"] = {["Safari Johto Wet Zone"] = {{14, 20, 17, 20}}, ["Safari Johto Mountain Zone"] = {{0, 8, 0, 11}}, ["Safari Johto Snow Zone"] = {{15, 0, 16, 0}}, ["Safari Johto Grass and Swamp Zone"] = {{30, 8, 30, 9}}}
+mapLink["Johto Safari Zone Lobby"] = {["Route 48"] = {{4, 15, 5, 15}}}
+mapLink["Lake Cave"] = {["Forest Pit"] = {{21, 19}}, ["Item Recyclers Room"] = {{28, 3}}}
 --mapLink["Lake of Rage House 1"] = {["Lake of Rage_A"] = {1}}
 --mapLink["Lake of Rage House 2"] = {["Lake of Rage_E"] = {1}}
 --mapLink["Lake of Rage_A"] = {["Lake of Rage House 1"] = {1}, ["Route 43"] = {1}, ["Lake of Rage_C"] = {1, {["abilities"] = {"cut"}}}}
@@ -572,20 +575,21 @@ mapLink["Item Maniac Johto"] = {["Ruins Of Alph_A"] = {{6, 11}}}
 --mapLink["Mahogany Town House"] = {["Mahogany Town"] = {1}}
 --mapLink["Mahogany Town Shop"] = {["Mahogany Town"] = {1}}
 --mapLink["Mahogany Town Subway"] = {["Pokecenter Mahogany"] = {0.2}, ["Olivine City Subway"] = {J_SUBWAY}, ["Violet City Subway"] = {J_SUBWAY}, ["Azalea Town Subway"] = {J_SUBWAY}, ["Blackthorn City Subway"] = {J_SUBWAY}, ["Cherrygrove City Subway"] = {J_SUBWAY}, ["Ecruteak City Subway"] = {J_SUBWAY}, ["Goldenrod City Subway"] = {J_SUBWAY}}
---mapLink["Mahogany Town"] = {["Mahogany Town House"] = {1}, ["Mahogany Town Gym_A"] = {1}, ["Mahogany Town Shop"] = {1}, ["Pokecenter Mahogany"] = {1}, ["Route 42_D"] = {1}, ["Route 43"] = {1}, ["Route 44"] = {1}}
+mapLink["Mahogany Town"] = {["Mahogany Town House"] = {1}, ["Mahogany Town Gym_A"] = {1}, ["Mahogany Town Shop"] = {1}, ["Pokecenter Mahogany"] = {1}, ["Route 42_D"] = {{0, 14, 0, 17}}, ["Route 43"] = {1}, ["Route 44"] = {1}}
 mapLink["Mart Cherrygrove City"] = {["Cherrygrove City_A"] = {{4, 11}}}
 mapLink["Miltank Barn"] = {["Route 39"] = {{8, 10, 9, 10}}}
---mapLink["Mt. Mortar 1F_A"] = {["Mt. Mortar Lower Cave"] = {1}, ["Route 42_A"] = {1}}
---mapLink["Mt. Mortar 1F_B"] = {["Mt. Mortar B1F_A"] = {1}, ["Route 42_B"] = {1}}
---mapLink["Mt. Mortar 1F_C"] = {["Mt. Mortar Lower Cave"] = {1}, ["Route 42_D"] = {1}}
---mapLink["Mt. Mortar 1F_D"] = {["Mt. Mortar Lower Cave"] = {1.5}, ["Route 42_C"] = {1}}
---mapLink["Mt. Mortar 1F_E"] = {["Mt. Mortar Lower Cave"] = {1}}
---mapLink["Mt. Mortar 1F_F"] = {["Mt. Mortar Upper Cave"] = {1}}
---mapLink["Mt. Mortar 1F_G"] = {["Mt. Mortar Lower Cave"] = {1}}
---mapLink["Mt. Mortar B1F_A"] = {["Mt. Mortar 1F_B"] = {1}, ["Mt. Mortar B1F_B"] = {1, {["abilities"] = {"surf"}}}}
---mapLink["Mt. Mortar B1F_B"] = {["Mt. Mortar B1F_A"] = {1, {["abilities"] = {"surf"}}}, ["Mt. Mortar Lower Cave"] = {1}}
---mapLink["Mt. Mortar Lower Cave"] = {["Mt. Mortar 1F_C"] = {1.5}, ["Mt. Mortar 1F_A"] = {1.5}, ["Mt. Mortar 1F_E"] = {1.5}, ["Mt. Mortar 1F_G"] = {1.5}, ["Mt. Mortar 1F_D"] = {2}, ["Mt. Mortar B1F_B"] = {2.5}, ["Mt. Mortar Upper Cave"] = {2.5}}
---mapLink["Mt. Mortar Upper Cave"] = {["Mt. Mortar Lower Cave"] = {1.5, {["abilities"] = {"surf"}}}, ["Mt. Mortar 1F_F"] = {2}}
+mapLink["Mt. Mortar 1F_A"] = {["Mt. Mortar Lower Cave"] = {{34, 35}}, ["Route 42_A"] = {{22, 46}}}
+mapLink["Mt. Mortar 1F_B"] = {["Mt. Mortar B1F_A"] = {{43, 43}}, ["Route 42_B"] = {{43, 49}}}
+mapLink["Mt. Mortar 1F_C"] = {["Mt. Mortar Lower Cave"] = {{53, 35}}, ["Route 42_D"] = {{65, 46}}}
+mapLink["Mt. Mortar 1F_D"] = {["Mt. Mortar Lower Cave"] = {{74, 34}}, ["Route 42_C"] = {{56, 52}}}
+mapLink["Mt. Mortar 1F_E"] = {["Mt. Mortar Lower Cave"] = {{26, 21}}}
+mapLink["Mt. Mortar 1F_F"] = {["Mt. Mortar Upper Cave"] = {{}}}
+mapLink["Mt. Mortar 1F_G"] = {["Mt. Mortar Lower Cave"] = {{65, 21}}}
+mapLink["Mt. Mortar B1F_A"] = {["Mt. Mortar 1F_B"] = {{39, 54}}}
+mapLink["Mt. Mortar B1F_B"] = {["Mt. Mortar Lower Cave"] = {{29, 13}}}
+mapLink["Mt. Mortar Lower Cave"] = {["Mt. Mortar 1F_C"] = {{47, 57}}, ["Mt. Mortar 1F_A"] = {{26, 57}}, ["Mt. Mortar 1F_E"] = {{17, 45}}, ["Mt. Mortar 1F_G"] = {{56, 46}}, ["Mt. Mortar 1F_D"] = {{65, 58}}, ["Mt. Mortar B1F_B"] = {{25, 31}}, ["Mt. Mortar Upper Cave"] = {{18, 13}}}
+mapLink["Mt. Mortar Northern Entrance"] = {["Mt. Mortar Upper Cave"] = {{15, 53}}, ["Forest Pit"] = {{57, 17}}}
+mapLink["Mt. Mortar Upper Cave"] = {["Mt. Mortar Northern Entrance"] = {{40, 11}}, ["Mt. Mortar Lower Cave"] = {{16, 17}}, ["Mt. Mortar 1F_F"] = {{33, 52}}}
 mapLink["National Park Stop House 1"] = {["National Park"] = {{3, 2, 4, 2}}, ["Route 35_A"] = {{3, 12, 4, 12}}}
 mapLink["National Park Stop"] = {["Route 36"] = {{10, 6, 10, 7}}, ["National Park"] = {{0, 6, 0, 7}}}
 mapLink["National Park"] = {["National Park Stop"] = {{62, 31, 62, 32}}, ["National Park Stop House 1"] = {{26, 76, 27, 76}}}
@@ -606,12 +610,12 @@ mapLink["Olivine Pokemart"] = {["Olivine City"] = {{6, 12, 7, 12}}}
 mapLink["Pokecenter Azalea"] = {["Azalea Town"] = {{10, 20, 11, 20}}}
 --mapLink["Pokecenter Blackthorn"] = {["Blackthorn City"] = {1}, ["Blackthorn City Subway"] = {0.2}}
 mapLink["Pokecenter Cherrygrove City"] = {["Cherrygrove City_A"] = {{10, 20, 11, 20}}}
---mapLink["Pokecenter Cianwood"] = {["Cianwood City"] = {1}}
+mapLink["Pokecenter Cianwood"] = {["Cianwood City"] = {{10, 20, 11, 20}}}
 mapLink["Pokecenter Ecruteak"] = {["Ecruteak City"] = {{10, 20, 11, 20}}}
 mapLink["Pokecenter Goldenrod"] = {["Goldenrod City"] = {{10, 20, 11, 20}}}
 --mapLink["Pokecenter Mahogany"] = {["Mahogany Town"] = {1}, ["Mahogany Town Subway"] = {0.2}}
 mapLink["Pokecenter Route 32"] = {["Route 32"] = {{8, 22, 9, 22}}}
---mapLink["Pokecenter Route 48"] = {["Route 48"] = {1}}
+mapLink["Pokecenter Route 48"] = {["Route 48"] = {{10, 20, 11, 20}}}
 mapLink["Pokecenter Violet City"] = {["Violet City"] = {{8, 22, 9, 22}}}
 mapLink["Professor Elms House"] = {["New Bark Town"] = {{16, 7, 16, 8}}}
 mapLink["Professor Elms Lab"] = {["New Bark Town"] = {{4, 14}}}
@@ -636,21 +640,20 @@ mapLink["Route 39 House"] = {["Route 39"] = {{6, 12, 7, 12}}}
 mapLink["Route 39"] = {["Route 39 House"] = {{16, 10}}, ["Miltank Barn"] = {{12, 10}}, ["Olivine City"] = {{28, 65, 30, 65}}, ["Route 38"] = {{39, 16, 39, 17}}}
 mapLink["Route 40"] = {["Battle Road"] = {{10, 5, 11, 5}}, ["Olivine City"] = {{30, 5, 30, 7}}, ["Route 41"] = {{11, 47, 15, 47}}}
 mapLink["Route 41"] = {["Cianwood City"] = {{0, 10, 0, 13}}, ["Route 40"] = {{49, 0, 53, 0}}, ["Whirl Islands 1F SouthEast"] = {46, 42}, ["Whirl Islands 1F NorthEast_A"] = {{44, 19}}, ["Whirl Islands 1F NorthWest"] = {{14, 21}}, ["Whirl Islands 1F SouthWest"] = {{17, 42}}}
---mapLink["Route 42_A"] = {["Ecruteak Stop House 2"] = {0.2}, ["Mt. Mortar 1F_A"] = {0.2}, ["Route 42_D"] = {0, {["abilities"] = {"dig"}}}}
---mapLink["Route 42_B"] = {["Mt. Mortar 1F_B"] = {0.2}, ["Route 42_A"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_C"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_D"] = {0.2, {["abilities"] = {"surf"}}}}
---mapLink["Route 42_C"] = {["Mt. Mortar 1F_D"] = {0.2}, ["Route 42_B"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_D"] = {0.2, {["abilities"] = {"surf"}}}}
---mapLink["Route 42_D"] = {["Mahogany Town"] = {0.2}, ["Mt. Mortar 1F_C"] = {0.2}, ["Route 42_A"] = {0, {["abilities"] = {"dig"}}}, ["Route 42_C"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_B"] = {0.2, {["abilities"] = {"surf"}}}, ["Route 42_E"] = {0, {["abilities"] = {"rock climb"}}}}
---mapLink["Route 42_E"] = {["Route 42_D"] = {0}}
+mapLink["Route 42_A"] = {["Ecruteak Stop House 2"] = {{3, 18, 3, 19}}, ["Mt. Mortar 1F_A"] = {{17, 13}}}
+mapLink["Route 42_B"] = {["Mt. Mortar 1F_B"] = {{46, 17}}}
+mapLink["Route 42_C"] = {["Mt. Mortar 1F_D"] = {{48, 6}}}
+mapLink["Route 42_D"] = {["Mahogany Town"] = {{95, 15, 95, 18}}, ["Mt. Mortar 1F_C"] = {{75, 13}}}
 --mapLink["Route 43"] = {["Lake of Rage_A"] = {1}, ["Lake of Rage_B"] = {1}, ["Mahogany Town"] = {1}}
 --mapLink["Route 44"] = {["Ice Path 1F_A"] = {1}, ["Mahogany Town"] = {1}, ["Blackthorn City"] = {1, {["abilities"] = {"dig"}}}}
 --mapLink["Route 45_A"] = {["Blackthorn City"] = {0.5}, ["Dark Cave North_A"] = {0.5}, ["Route 45_B"] = {0.5}, ["Route 31"] = {0.5, {["abilities"] = {"dig"}}}}
 --mapLink["Route 45_B"] = {["Route 46_A"] = {1.5}}
 --mapLink["Route 46_A"] = {["Route 46_B"] = {0.5}, ["Route 45_B"] = {0.5}, ["Dark Cave South_D"] = {0.5}}
 --mapLink["Route 46_B"] = {["Route 29 Stop House"] = {0.5}}
---mapLink["Route 47_A"] = {["Cliff Cave 1F"] = {1}, ["Cliff Edge Gate"] = {1}}
---mapLink["Route 47_B"] = {["Cliff Cave B1F"] = {1}}
---mapLink["Route 47_C"] = {["Cliff Cave 2F"] = {2}, ["Route 48"] = {2}}
---mapLink["Route 48"] = {["Johto Safari Zone Lobby"] = {1}, ["Pokecenter Route 48"] = {1}, ["Route 47_C"] = {1}}
+mapLink["Route 47_A"] = {["Cliff Cave 1F"] = {{68, 71}}, ["Cliff Edge Gate"] = {{89, 74}}}
+mapLink["Route 47_B"] = {["Cliff Cave B1F"] = {{67, 83}}}
+mapLink["Route 47_C"] = {["Cliff Cave 2F"] = {{69, 65}}, ["Route 48"] = {{31, 0, 33, 0}}}
+mapLink["Route 48"] = {["Johto Safari Zone Lobby"] = {{21, 6, 22, 6}}, ["Pokecenter Route 48"] = {{15, 15}}, ["Route 47_C"] = {{36, 72, 38, 72}}}
 mapLink["Ruins Of Alph Entrance"] = {["Ruins Of Alph_A"] = {{6, 11}}, ["Ruins Of Alph Interior"] = {{6, 6}}}
 mapLink["Ruins Of Alph Interior"] = {["Ruins Of Alph Entrance"] = {{14, 16}}}
 mapLink["Ruins Of Alph Puzzle 1"] = {["Ruins Of Alph_A"] = {{4, 12}}}--need pidgey
@@ -664,10 +667,10 @@ mapLink["Ruins Of Alph_B"] = {["Ruins Of Alph Puzzle 4"] = {{17, 30}}, ["Union C
 mapLink["Ruins Of Alph_C"] = {["Ruins Of Alph Puzzle 3"] = {{17, 47}}, ["Union Cave 1F_A"] = {{10, 47}}}
 mapLink["Ruins Of Alph_D"] = {["Ruins Of Alph Puzzle 2"] = {{29, 47}}}
 mapLink["Ruins Research Center"] = {["Ruins Of Alph_A"] = {{3, 11}}}
---mapLink["Safari Johto Grass and Swamp Zone"] = {["Johto Safari Entrance"] = {1}}
---mapLink["Safari Johto Mountain Zone"] = {["Johto Safari Entrance"] = {1}}
---mapLink["Safari Johto Snow Zone"] = {["Johto Safari Entrance"] = {1}}
---mapLink["Safari Johto Wet Zone"] = {["Johto Safari Entrance"] = {1}}
+mapLink["Safari Johto Grass and Swamp Zone"] = {["Johto Safari Entrance"] = {{0, 20, 0, 21}}}
+mapLink["Safari Johto Mountain Zone"] = {["Johto Safari Entrance"] = {{66, 28, 66, 31}}}
+mapLink["Safari Johto Snow Zone"] = {["Johto Safari Entrance"] = {{21, 66, 22, 66}}}
+mapLink["Safari Johto Wet Zone"] = {["Johto Safari Entrance"] = {{19, 0, 22, 0}}}
 mapLink["Slowpoke Well L1"] = {["Slowpoke Well"] = {{16, 18}}}
 mapLink["Slowpoke Well"] = {["Slowpoke Well L1"] = {{35, 27}}, ["Azalea Town"] = {{41, 39}}}
 mapLink["Sprout Tower F1_A"] = {["Violet City"] = {{13, 26}}, ["Sprout Tower F2_A"] = {{8, 8}}}
@@ -695,15 +698,14 @@ mapLink["Violet City School"] = {["Violet City"] = {{10, 13, 11, 13}}}
 mapLink["Violet City Stop House"] = {["Route 31"] = {{10, 6, 10, 7}}, ["Violet City"] = {{0, 6, 0, 7}}}
 mapLink["Violet City"] = {["Violet City Stop House"] = {{61, 55, 61, 56}}, ["Sprout Tower F1_A"] = {{37, 11}}, ["Route 36 Stop"] = {{1, 31, 1, 32}}, ["Violet City House 2"] = {{9, 39}}, ["Violet City Pokemart"] = {{18, 41}}, ["Violet City School"] = {{45, 42}}, ["Violet City Gym Entrance"] = {{27, 43}}, ["Pokecenter Violet City"] = {{48, 57}}, ["Violet City House 1"] = {{34, 60}}, ["Route 32"] = {{19, 72, 20, 72}}}
 mapLink["Whirl Islands 1F NorthEast_A"] = {["Route 41"] = {{13, 23}}, ["Whirl Islands 1F NorthEast_B"] = {0}}
---mapLink["Whirl Islands 1F NorthEast_B"] = {["Whirl Islands 1F NorthEast_C"] = {0}, ["Whirl Islands 1F NorthEast_D"] = {0}}
 mapLink["Whirl Islands 1F NorthEast_C"] = {["Whirl Islands B1F_A"] = {{24, 18}}}
 mapLink["Whirl Islands 1F NorthEast_D"] = {["Whirl Islands B1F_C"] = {{27, 12}}}
 mapLink["Whirl Islands 1F NorthWest"] = {["Route 41"] = {{16, 21}}, ["Whirl Islands B1F_A"] ={{13, 13}}}
---mapLink["Whirl Islands 1F SouthEast"] = {["Route 41"] = {1}, ["Whirl Islands B1F_B"] = {1}}
---mapLink["Whirl Islands 1F SouthWest"] = {["Route 41"] = {1}, ["Whirl Islands B1F_B"] = {1}}
-mapLink["Whirl Islands B1F_A"] = {["Whirl Islands 1F NorthWest"] = {{18, 14}}, ["Whirl Islands 1F NorthEast_C"] = {{57, 22}}, ["Whirl Islands B1F_B"] = {1.5}, ["Whirl Islands B2F"] = {{28, 56}}}
---mapLink["Whirl Islands B1F_B"] = {["Whirl Islands 1F SouthWest"] = {1}, ["Whirl Islands 1F SouthEast"] = {1}}
---mapLink["Whirl Islands B1F_C"] = {["Whirl Islands B1F_B"] = {2}, ["Whirl Islands 1F NorthEast_D"] = {2}, ["Whirl Islands B2F"] = {1.5}}
+mapLink["Whirl Islands 1F SouthEast"] = {["Route 41"] = {{18, 25}}, ["Whirl Islands B1F_B"] = {{18, 17}}}
+mapLink["Whirl Islands 1F SouthWest"] = {["Route 41"] = {{16, 19}}, ["Whirl Islands B1F_B"] = {{13, 13}}}
+mapLink["Whirl Islands B1F_A"] = {["Whirl Islands 1F NorthWest"] = {{18, 14}}, ["Whirl Islands 1F NorthEast_C"] = {{57, 22}}, ["Whirl Islands B2F"] = {{28, 56}}}
+mapLink["Whirl Islands B1F_B"] = {["Whirl Islands 1F SouthWest"] = {{26, 60}}, ["Whirl Islands 1F SouthEast"] = {{61, 55}}}
+mapLink["Whirl Islands B1F_C"] = {["Whirl Islands 1F NorthEast_D"] = {{65, 12}}, ["Whirl Islands B2F"] = {{50, 51}}}
 mapLink["Whirl Islands B2F"] = {["Whirl Islands B1F_A"] = {{19, 25}}, ["Whirl Islands B1F_C"] = {{24, 13}}, ["Whirl Islands B3F"] = {{22, 30}},  ["Whirl Islands B4F"] = {{29, 55}}}
 mapLink["Whirl Islands B3F"] = {["Whirl Islands B2F"] = {{22, 24}}}
 mapLink["Whirl Islands B4F"] = {["Whirl Islands B2F"] = {{23, 36}}}

@@ -315,7 +315,7 @@ linkExce["Mt. Mortar Lower Cave"] = {
     ["Mt. Mortar 1F_A"] = {26, 57},
     ["Mt. Mortar 1F_C"] = {47, 57},
     ["Mt. Mortar 1F_D"] = {65, 58},
-    ["Mt. Mortar 1F_F"] = {17, 45},
+    ["Mt. Mortar 1F_E"] = {17, 45},
     ["Mt. Mortar 1F_G"] = {56, 46},
 }
 linkExce["Route 43"] = {
